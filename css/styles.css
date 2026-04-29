@@ -5,7 +5,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Open+Sans:wght@400;600&display=swap');
 
-/* ---------- CSS Reset / Base ---------- */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -133,7 +132,7 @@ img {
     transform: translateY(-12px) rotate(-45deg);
 }
 
-/* ---------- Page Layout / Hero ---------- */
+
 main {
     padding-top: 75px;
     min-height: calc(100vh - 200px);
@@ -160,7 +159,7 @@ main {
 }
 
 .hero-content h1 span {
-    color: #c11325;
+    color: #c15325;
 }
 
 .hero-content p {
@@ -171,9 +170,8 @@ main {
     margin-right: auto;
 }
 
-/* ---------- Page Banner (used on inner pages) ---------- */
 .page-banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/gallery2.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../assets/gallery2.jpg');
     background-size: cover;
     background-position: center;
     color: #ffffff;
@@ -225,7 +223,7 @@ main {
     color: #000000;
 }
 
-/* ---------- Sections ---------- */
+
 section {
     padding: 70px 0;
 }
@@ -262,7 +260,7 @@ section {
     margin-right: auto;
 }
 
-/* ---------- About / Feature Cards ---------- */
+
 .feature-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -303,7 +301,7 @@ section {
     font-size: 15px;
 }
 
-/* ---------- Two-Column Section ---------- */
+
 .two-column {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -331,7 +329,7 @@ section {
     margin-bottom: 14px;
 }
 
-/* ---------- Trainer Cards ---------- */
+
 .trainer-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -374,7 +372,7 @@ section {
     letter-spacing: 1px;
 }
 
-/* ---------- Classes Cards ---------- */
+
 .class-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -428,7 +426,7 @@ section {
     font-size: 15px;
 }
 
-/* ---------- Pricing Plans ---------- */
+
 .plan-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -492,7 +490,7 @@ section {
     padding: 0 20px 25px;
 }
 
-/* ---------- Form Page ---------- */
+
 .form-section {
     background-color: #ffffff;
     padding: 50px 0;
@@ -612,7 +610,7 @@ section {
     border-color: #555;
 }
 
-/* ---------- Contact Page ---------- */
+
 .contact-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -684,7 +682,7 @@ section {
     letter-spacing: 1px;
 }
 
-/* ---------- Summary Page ---------- */
+
 .summary-section {
     background-color: #ffffff;
     padding: 50px 0;
@@ -753,7 +751,7 @@ section {
     flex-wrap: wrap;
 }
 
-/* ---------- Call to Action Strip ---------- */
+
 .cta-strip {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/gallery1.jpg');
     background-size: cover;
@@ -774,7 +772,7 @@ section {
     font-size: 18px;
 }
 
-/* ---------- Gallery Strip ---------- */
+
 .gallery-strip {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -791,15 +789,16 @@ section {
 
 .gallery-strip img:hover {
     transform: scale(1.05);
-    filter: brightness(0.85);
+    filter: brightness(0.75);
 }
 
-/* ---------- Footer ---------- */
+
 .site-footer {
     background-color: #111;
     color: #ddd;
     padding: 50px 20px 20px;
 }
+
 
 .footer-inner {
     max-width: 1170px;
@@ -877,6 +876,7 @@ section {
     transform: translateY(-3px);
 }
 
+
 .footer-bottom {
     border-top: 1px solid #2a2a2a;
     margin-top: 30px;
@@ -890,7 +890,7 @@ section {
     color: #c11325;
 }
 
-/* ---------- Back to Top ---------- */
+
 .back-to-top {
     position: fixed;
     bottom: 24px;
@@ -914,7 +914,7 @@ section {
 }
 
 .back-to-top:hover {
-    background-color: #911019;
+    background-color: #915019;
     transform: translateY(-3px);
 }
 
@@ -922,7 +922,7 @@ section {
     display: flex;
 }
 
-/* ---------- Utility Classes ---------- */
+
 .bg-white {
     background-color: #ffffff;
 }
@@ -955,7 +955,7 @@ section {
     padding-left: 20px;
 }
 
-/* ---------- Responsive ---------- */
+
 @media (max-width: 992px) {
     .hero-content h1 { font-size: 42px; }
     .feature-grid,
@@ -1032,5 +1032,5 @@ section {
 @media (max-width: 480px) {
     .hero-content h1 { font-size: 28px; }
     .page-banner h1 { font-size: 30px; }
-    .gallery-strip { grid-template-columns: 1fr; }
+    .gallery-strip { grid-template-columns: 1fr}
 }
