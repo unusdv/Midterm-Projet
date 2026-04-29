@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerFit Gym | Register</title>
+    <meta name="description" content="Sign up for a PowerFit Gym membership. Fill out the registration form and start your fitness journey.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top">
+
+    <!-- ============ Header / Navigation ============ -->
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo">
+                <a href="index.html">Power<span>Fit</span></a>
+            </div>
+            <div class="ham-burger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============ Main Content ============ -->
+    <main>
+
+        <!-- Page banner -->
+        <section class="page-banner">
+            <h1>Membership Registration</h1>
+            <p>Fill in the form below to start your PowerFit journey.</p>
+        </section>
+
+        <!-- Registration Form -->
+        <section class="form-section">
+            <div class="container">
+                <article class="form-card">
+                    <h2>Register Now</h2>
+                    <p class="form-intro">All fields marked with * are required.</p>
+
+                    <div id="form-errors" class="error-box" role="alert"></div>
+
+                    <form id="registration-form" novalidate>
+
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="e.g. Alex Carter" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+998 90 123 4567">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="age">Age *</label>
+                            <input type="number" id="age" name="age" min="12" max="100" placeholder="18" required>
+                        </div>
+
+                        <fieldset class="form-group">
+                            <legend>Gender *</legend>
+                            <div class="radio-group">
+                                <label><input type="radio" name="gender" value="Male"> Male</label>
+                                <label><input type="radio" name="gender" value="Female"> Female</label>
+                                <label><input type="radio" name="gender" value="Prefer not to say"> Prefer not to say</label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="form-group">
+                            <legend>Fitness Goals (select all that apply)</legend>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" name="goals" value="Weight Loss"> Weight Loss</label>
+                                <label><input type="checkbox" name="goals" value="Muscle Gain"> Muscle Gain</label>
+                                <label><input type="checkbox" name="goals" value="Endurance"> Endurance</label>
+                                <label><input type="checkbox" name="goals" value="Flexibility"> Flexibility</label>
+                                <label><input type="checkbox" name="goals" value="General Health"> General Health</label>
+                            </div>
+                        </fieldset>
+
+                        <div class="form-group">
+                            <label for="plan">Membership Plan *</label>
+                            <select id="plan" name="plan" required>
+                                <option value="">-- Choose a plan --</option>
+                                <option value="basic">Basic - $29/Month</option>
+                                <option value="standard">Standard - $49/Month</option>
+                                <option value="premium">Premium - $79/Month</option>
+                                <option value="elite">Elite - $99/Month</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="startDate">Preferred Start Date</label>
+                            <input type="text" id="startDate" name="startDate" placeholder="YYYY-MM-DD">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes">Additional Notes</label>
+                            <textarea id="notes" name="notes" placeholder="Tell us about any injuries, preferences, or questions..."></textarea>
+                        </div>
+
+                        <div class="form-buttons">
+                            <button type="submit" class="btn">Submit Registration</button>
+                            <button type="reset" class="btn btn-reset">Reset Form</button>
+                        </div>
+                    </form>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============ Footer ============ -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <h3>Power<span>Fit</span> Gym</h3>
+                <p>PowerFit Gym is a modern fitness destination focused on strength, conditioning, and community. Train smarter, recover better, and live stronger.</p>
+                <div class="social-links" aria-label="Social media">
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Twitter">TW</a>
+                    <a href="#" aria-label="YouTube">YT</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get In Touch</h4>
+                <ul>
+                    <li>123 Fitness Avenue, Tashkent</li>
+                    <li>+998 90 123 4567</li>
+                    <li>info@powerfitgym.com</li>
+                    <li>Mon - Sun: 6:00 AM - 11:00 PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 PowerFit Gym. All rights reserved. &nbsp;|&nbsp; <a href="#top">Back to Top</a></p>
+        </div>
+    </footer>
+
+    <a href="#top" class="back-to-top" aria-label="Back to top">&uarr;</a>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
